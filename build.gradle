@@ -1,0 +1,25 @@
+group 'io.github.choduk'
+version '1.0-SNAPSHOT'
+
+ext {
+    javaVersion = '1.8'
+    h2Databases = '1.4.186'
+    lombokVersion = '1.16.2'
+    hibernateVersion = '4.3.8.Final'
+}
+
+apply plugin: 'java'
+sourceCompatibility = javaVersion
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    compile "com.h2database:h2:$h2Databases"
+    compile "org.projectlombok:lombok:$lombokVersion"
+    compile "org.hibernate:hibernate-entitymanager:$hibernateVersion"
+}
