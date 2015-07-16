@@ -9,12 +9,12 @@ ext {
 }
 
 apply plugin: 'java'
-sourceCompatibility = javaVersion
-
 
 repositories {
     mavenCentral()
 }
+
+sourceSets.main.output.resourcesDir = sourceSets.main.output.classesDir
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
