@@ -10,7 +10,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 /**
- * @author choduk88@sk.com
+ * @author choduk88@gmail.com
  */
 public class Application {
 
